@@ -7,93 +7,103 @@
 // custom settings, run `zed: open default settings` from the
 // command palette (cmd-shift-p / ctrl-shift-p)
 {
-	// "vim_mode": true,
-	"base_keymap": "VSCode",
+    "vim_mode": false,
+    "base_keymap": "VSCode",
 
-	"ui_font_family": "Monaspace Krypton Frozen", // Beirut
-	"ui_font_size": 12.0,
+    "ui_font_family": "Monaspace Krypton Frozen",
+    "ui_font_size": 12.0,
 
-	"buffer_font_family": "Monaspace Krypton Frozen",
-	"buffer_font_size": 15,
-	"buffer_font_weight": 400.0,
-	"buffer_line_height": {
-		"custom": 1.05
-	},
+    "buffer_font_family": "Monaspace Krypton Frozen",
+    "buffer_font_size": 15,
+    "buffer_font_weight": 400.0,
+    "buffer_line_height": {
+        "custom": 1.05,
+    },
 
-	"icon_theme": "",
-	"theme": {
-		"mode": "dark",
-		"light": "One Light",
-		"dark": "Monokai-og"
-	},
+    "icon_theme": "Bearded Icon Theme",
+    "theme": {
+        "mode": "dark",
+        "light": "One Light",
+        "dark": "Monokai-og",
+    },
 
-	"format_on_save": "off",
+    "format_on_save": "off",
 
-	"theme_overrides": {
-	},
+    "theme_overrides": {},
 
-	"experimental.theme_overrides": {
-		"background.appearance": "transparent",
+    // "terminal": {
+    //    "shell": {
+    //      "program": "bash"
+    //    }
+    //  },
 
+    "experimental.theme_overrides": {
+        "background.appearance": "blurred",
 
-		// Catppuccin Frappé dark translucent overrides
-		"background": "#30344699", // base
-		"status_bar.background": "#30344650",
-		"title_bar.background": "#30344650",
-		"elevated_surface.background": "#30344650",
-		"surface.background": "#30344650",
-		"editor.background": "#30344655", // this
-		"editor.gutter.background": "#00000050",
-		"editor.line_number": "#b5bfe299",
-		"editor.active_line_number": "#8caaee",
-		"editor.active_line.background": "#51576d50",
-		"editor.indent_guide": "#8caaee50",
-		"editor.indent_guide_active": "#8caaee50",
+        // Catppuccin Frappé dark translucent overrides
+        "background": "#30344645", // base
+        "status_bar.background": "#30344650",
+        "title_bar.background": "#30344650",
+        "elevated_surface.background": "#000000",
+        "surface.background": "#30344650",
+        "editor.background": "#30344655", // this
+        "editor.gutter.background": "#00000050",
+        "editor.line_number": "#b5bfe299",
+        "editor.active_line_number": "#8caaee",
+        "editor.active_line.background": "#51576d50",
+        // <- these lines
+        "editor.indent_guide": "#8caaee50",
+        "editor.indent_guide_active": "#8caaee50",
 
-		//highlights
-		"editor.document_highlight.read_background": "#FF007F75",
-		"editor.document_highlight.write_background": "#FF007F75",
-		"editor.document_highlight.bracket_background": "#FF007F75",
+        //highlights
+        "editor.document_highlight.read_background": "#FF007F75",
+        "editor.document_highlight.write_background": "#FF007F75",
+        "editor.document_highlight.bracket_background": "#FF0000",
+        "search.match_background": "#eb34de",
+        "search.active_match_background": "#34ebeb",
 
-		"border": "#ffffff",
-		"border.variant": "#ffffff",
-		"hint.background": "#ffffff",
+        "border": "#ffffff",
+        "border.variant": "#ffffff",
+        "hint.background": "#ffffff",
 
-		"tab_bar.background": "#00000025",
-		"tab.active_background": "#8caaee20",
-		"tab.inactive_background": "#00000000",
-		"element.selected": "#8caaee20",
+        "tab_bar.background": "#00000025",
+        "tab.active_background": "#8caaee20",
+        "tab.inactive_background": "#00000000",
+        "element.selected": "#8caaee20",
 
-		"panel.background": "#00000025",
-		"panel.indent_guide": "#8caaee12",
-		"panel.indent_guide_hover": "#8caaee16",
-		"panel.indent_guide_active": "#8caaee1a",
-		"panel.focused_border": "#00000000",
+        // cmd b panel
+        "panel.background": "#00000025",
+        "panel.indent_guide": "#8caaee12",
+        "panel.indent_guide_hover": "#8caaee16",
+        "panel.indent_guide_active": "#8caaee1a",
+        "panel.focused_border": "#00000000",
 
-		"toolbar.background": "#00000025",
-		"terminal.background": "#00000000",
-		"scrollbar.track.background": "#00000000",
-		"scrollbar.track.border": "#00000000",
-		"scrollbar.thumb.background": "#8caaee20",
+        "toolbar.background": "#00000025",
+        "terminal.background": "#00000000",
+        "scrollbar.track.background": "#00000000",
+        "scrollbar.track.border": "#00000000",
+        "scrollbar.thumb.background": "#8caaee20",
 
-		"ghost_element.background": "#8caaee25",
-		"ghost_element.hover": "#8caaee10",
-		"ghost_element.active": "#8caaee15",
-		"ghost_element.selected": "#8caaee20",
-		"drop_target.background": "#8caaee20",
-		"element.hover": "#8caaee10",
-		"editor.highlighted_line.background": "#8caaee25"
-	},
+        "ghost_element.background": "#8caaee25",
+        "ghost_element.hover": "#8caaee10",
+        "ghost_element.active": "#8caaee15",
+        "ghost_element.selected": "#8caaee20",
+        "drop_target.background": "#8caaee20",
+        "element.hover": "#8caaee10",
+        "editor.highlighted_line.background": "#8caaee25",
+    },
 
-	"toolbar": {
-		"breadcrumbs": true,
-		"quick_actions": false
-	},
-	"tab_bar": {
-		"show_nav_history_buttons": false
-	},
-	"features": {
-		"edit_prediction_provider": "zed"
-	},
-	"hard_tabs": true
+    "toolbar": {
+        "breadcrumbs": true,
+        "quick_actions": false,
+    },
+    "tab_bar": {
+        "show_nav_history_buttons": false,
+    },
+    "features": {
+        "edit_prediction_provider": "zed",
+    },
+
+    "hard_tabs": false,
+    "tab_size": 4,
 }
