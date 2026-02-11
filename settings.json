@@ -1,0 +1,113 @@
+// Zed settings
+//
+// For information on how to configure Zed, see the Zed
+// documentation: https://zed.dev/docs/configuring-zed
+//
+// To see all of Zed's default settings without changing your
+// custom settings, run `zed: open default settings` from the
+// command palette (cmd-shift-p / ctrl-shift-p)
+{
+	// "vim_mode": true,
+	// "ui_font_family": "Beirut",
+	"active_pane_modifiers": {
+  "inactive_opacity": 1.0
+ },
+ "terminal": {
+		"shell": {
+			"program": "C:\\Program Files\\Git\\bin\\bash.exe",
+		},
+	},
+	"buffer_line_height": {
+		"custom": 1.05,
+	},
+	"buffer_font_weight": 400.0,
+	"buffer_font_family": "Monaspace Krypton Frozen",
+	"base_keymap": "VSCode",
+	// "icon_theme": "FantastIcons Icon Theme",
+	"ui_font_size": 15.0,
+	"buffer_font_size": 15,
+	"theme": {
+		"mode": "dark",
+		"light": "One Light",
+		"dark": "Monokai-og",
+	},
+	"minimap": {
+		"show": "auto",
+		"thumb": "hover",
+		"max_width_columns": 20,
+	},
+
+	// "bottom_dock_layout": "left_aligned"
+
+	// "theme": "Catppuccin Frappé - No Italics",
+	// "buffer_font_size": null,
+	// "tab_size": 4,
+	// "buffer_font_family": "MonoLisa",
+	"format_on_save": "off",
+	// "project_panel": { "dock": "right" },
+	// "git_panel": { "button": true, "dock": "right" },
+	// "outline_panel": { "dock": "right", "button": false },
+	// "notification_panel": { "button": false },
+	// "terminal": { "button": false },
+	// "collaboration_panel": { "button": false, "dock": "right" },
+
+	"experimental.theme_overrides": {
+		"background.appearance": "blurred",
+
+		// Catppuccin Frappé dark translucent overrides
+		"background": "#27282299", // base
+		"status_bar.background": "#27282299",
+		"title_bar.background": "#27282299",
+		"elevated_surface.background": "#30344650",
+		"surface.background": "#30344600",
+		//editor
+		"editor.background": "#27282250",
+		"editor.gutter.background": "#27282250",
+		"editor.line_number": "#b5bfe299",
+		"editor.active_line_number": "#8caaee",
+		"editor.active_line.background": "#51576d40",
+		"editor.indent_guide": "#8caaee1a",
+		"editor.indent_guide_active": "#8caaee33",
+
+		"border": "#ffffff50",
+		"border.variant": "#ffffff50",
+		"hint.background": "#414559cc",
+
+		"tab_bar.background": "#00000025",
+		"tab.active_background": "#8caaee20",
+		"tab.inactive_background": "#00000000",
+		"element.selected": "#8caaee20",
+
+		"panel.background": "#00000025",
+		"panel.indent_guide": "#ffffff50",
+		"panel.indent_guide_hover": "#8caaee16",
+		"panel.indent_guide_active": "#8caaee1a",
+		"panel.focused_border": "#00000000",
+
+		"toolbar.background": "#00000025",
+		"terminal.background": "#00000000",
+		"scrollbar.track.background": "#00000000",
+		"scrollbar.track.border": "#ffffff50",
+		"scrollbar.thumb.background": "#8caaee20",
+
+		"ghost_element.background": "#8caaee05",
+		"ghost_element.hover": "#8caaee10",
+		"ghost_element.active": "#8caaee15",
+		"ghost_element.selected": "#8caaee20",
+		"drop_target.background": "#8caaee20",
+		"element.hover": "#8caaee10",
+		"editor.highlighted_line.background": "#8caaee25",
+	},
+
+	"toolbar": {
+		"breadcrumbs": true,
+		"quick_actions": false,
+	},
+	"tab_bar": {
+		"show_nav_history_buttons": false,
+	},
+	"features": {
+		"edit_prediction_provider": "zed",
+	},
+	"hard_tabs": true,
+}
