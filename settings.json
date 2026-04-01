@@ -7,7 +7,10 @@
 // custom settings, run `zed: open default settings` from the
 // command palette (cmd-shift-p / ctrl-shift-p)
 {
-    "vim_mode": false,
+    "edit_predictions": {
+        "provider": "zed",
+    },
+    "vim_mode": false, // sorry
     "base_keymap": "VSCode",
 
     "ui_font_family": "Monaspace Krypton Frozen",
@@ -36,24 +39,37 @@
     //      "program": "bash"
     //    }
     //  },
+    //
+    "lsp": {
+        "basedpyright": {
+            "settings": {
+                "basedpyright.analysis": {
+                    "diagnosticMode": "workspace",
+                    "inlayHints": {
+                        "callArgumentNames": false,
+                    },
+                },
+            },
+        },
+    },
 
     "experimental.theme_overrides": {
         "background.appearance": "blurred",
 
         // Catppuccin Frappé dark translucent overrides
         "background": "#30344645", // base
-        "status_bar.background": "#30344650",
+        "status_bar.background": "#3034465",
         "title_bar.background": "#30344650",
-        "elevated_surface.background": "#000000",
+        "elevated_surface.background": "#00000099",
         "surface.background": "#30344650",
-        "editor.background": "#30344655", // this
+        "editor.background": "#30344685", // this
         "editor.gutter.background": "#00000050",
         "editor.line_number": "#b5bfe299",
         "editor.active_line_number": "#8caaee",
         "editor.active_line.background": "#51576d50",
         // <- these lines
         "editor.indent_guide": "#8caaee50",
-        "editor.indent_guide_active": "#8caaee50",
+        "editor.indent_guide_active": "#34ebeb99",
 
         //highlights
         "editor.document_highlight.read_background": "#FF007F75",
@@ -67,7 +83,7 @@
         "hint.background": "#ffffff",
 
         "tab_bar.background": "#00000025",
-        "tab.active_background": "#8caaee20",
+        "tab.active_background": "#8caaee99",
         "tab.inactive_background": "#00000000",
         "element.selected": "#8caaee20",
 
@@ -83,14 +99,73 @@
         "scrollbar.track.background": "#00000000",
         "scrollbar.track.border": "#00000000",
         "scrollbar.thumb.background": "#8caaee20",
+        "scrollbar.thumb.hover_background": "#FF69B470", //changeme
 
-        "ghost_element.background": "#8caaee25",
+        "ghost_element.background": "#50505075",
         "ghost_element.hover": "#8caaee10",
         "ghost_element.active": "#8caaee15",
         "ghost_element.selected": "#8caaee20",
         "drop_target.background": "#8caaee20",
         "element.hover": "#8caaee10",
         "editor.highlighted_line.background": "#8caaee25",
+
+        // =========================
+        // Missing fields (hot pink - why? easy to identify)
+        // =========================
+
+        // Editor core
+        "editor.foreground": "#FFFFFF",
+        "editor.cursor": "#FF69B4",
+        "editor.selection.background": "#FF69B455",
+        "editor.selection.foreground": "#FF69B4",
+        "editor.word_highlight.background": "#FF69B455",
+
+        // Tabs text
+        "tab.active_foreground": "#FF69B4",
+        "tab.inactive_foreground": "#FF69B480",
+
+        // Elements (full set)
+        "element.background": "#FF69B420",
+        "element.active": "#FF69B440",
+        "element.disabled": "#FF69B410",
+
+
+        // Text & icons
+        "text": "#FFFFFF",
+        "text.muted": "#FFFFFF99",
+        "text.placeholder": "#FF69B460",
+        "icon": "#FF69B4",
+        "icon.muted": "#FF69B480",
+
+        // Inputs / command palette
+        "input.background": "#FF69B420",
+        "input.border": "#FF69B450",
+        "input.focused_border": "#FF69B4",
+        "input.placeholder": "#FF69B460",
+
+        // Lists (menus, pickers)
+        "list.hover": "#FF69B430",
+        "list.active": "#FF69B440",
+        "list.selected": "#FF69B450",
+
+        // Terminal ANSI (set to monokai colours)
+        "terminal.foreground": "#F8F8F2",
+        "terminal.ansi.black": "#272822",
+        "terminal.ansi.red": "#F92672",
+        "terminal.ansi.green": "#A6E22E",
+        "terminal.ansi.yellow": "#F4BF75",
+        "terminal.ansi.blue": "#66D9EF",
+        "terminal.ansi.magenta": "#AE81FF",
+        "terminal.ansi.cyan": "#2AA198",
+        "terminal.ansi.white": "#F8F8F2",
+        "terminal.ansi.bright_black": "#75715E",
+        "terminal.ansi.bright_red": "#F92672",
+        "terminal.ansi.bright_green": "#A6E22E",
+        "terminal.ansi.bright_yellow": "#F4BF75",
+        "terminal.ansi.bright_blue": "#66D9EF",
+        "terminal.ansi.bright_magenta": "#AE81FF",
+        "terminal.ansi.bright_cyan": "#2AA198",
+        "terminal.ansi.bright_white": "#FFFFFF",
     },
 
     "toolbar": {
@@ -99,9 +174,6 @@
     },
     "tab_bar": {
         "show_nav_history_buttons": false,
-    },
-    "features": {
-        "edit_prediction_provider": "zed",
     },
 
     "hard_tabs": false,
