@@ -23,5 +23,22 @@
     "bindings": {
       "alt-shift-f": "editor::Format"
     }
+  },
+  {
+    "bindings": {
+      "ctrl-g": "editor::ExpandAllHunkDiffs"
+    }
+  },
+  {
+    "context": "Editor",
+    "bindings": {
+      "ctrl-g": "editor::ExpandAllDiffHunks"
+    }
+  },
+  {
+    "context": "Editor",
+    "unbind": {
+      "ctrl-\"": "editor::ExpandAllDiffHunks"
+    }
   }
 ]
