@@ -7,6 +7,48 @@
 // custom settings, run `zed: open default settings` from the
 // command palette (cmd-shift-p / ctrl-shift-p)
 {
+    "debugger": {
+        "dock": "left"
+    },
+    "cli_default_open_behavior": "new_window",
+    "agent_servers": {
+        "claude-acp": {
+            "default_config_options": {
+                "fast": true,
+                "effort": "high",
+                "mode": "plan",
+                "model": "opus[1m]"
+            },
+            "type": "registry"
+        },
+        "codex-acp": {
+            "default_config_options": {
+                "model": "gpt-5.6-sol",
+                "mode": "read-only",
+                "reasoning_effort": "medium",
+            },
+            "type": "registry",
+        },
+    },
+    "project_panel": {
+        "dock": "left",
+    },
+    "outline_panel": {
+        "dock": "left",
+    },
+    "collaboration_panel": {
+        "button": false,
+        "dock": "left",
+    },
+    "agent": {
+        "dock": "left",
+        "favorite_models": [],
+        "model_parameters": [],
+    },
+    "git_panel": {
+        "button": false,
+        "dock": "left",
+    },
     "edit_predictions": {
         "provider": "zed",
     },
@@ -23,24 +65,44 @@
         "custom": 1.05,
     },
 
-    "icon_theme": "Bearded Icon Theme",
+    "icon_theme": {
+        "mode": "light",
+        "light": "Datapack Icons",
+        "dark": "Datapack Icons"
+    },
     "theme": {
         "mode": "dark",
-        "light": "One Light",
-        "dark": "Monokai-og",
+        "light": "Gruvbox Light Soft",
+        "dark": "Palenight Theme",
     },
 
     "format_on_save": "off",
 
     "theme_overrides": {},
 
-    // "terminal": {
-    //    "shell": {
-    //      "program": "bash"
-    //    }
-    //  },
-    //
+    "terminal": {
+        "dock": "right",
+        "shell": {
+            "program": "fish",
+        },
+    },
+
     "lsp": {
+        "vtsls": {
+            "settings": {
+                "typescript": {
+                    "updateImportsOnFileMove": {
+                        "enabled": "always",
+                    },
+                },
+                "javascript": {
+                    "updateImportsOnFileMove": {
+                        "enabled": "always",
+                    },
+                },
+            },
+            "enable_lsp_tasks": true,
+        },
         "basedpyright": {
             "settings": {
                 "basedpyright.analysis": {
@@ -55,21 +117,20 @@
 
     "experimental.theme_overrides": {
         "background.appearance": "blurred",
-
-        // Catppuccin Frappé dark translucent overrides
-        "background": "#30344645", // base
-        "status_bar.background": "#3034465",
-        "title_bar.background": "#30344650",
-        "elevated_surface.background": "#00000099",
-        "surface.background": "#30344650",
-        "editor.background": "#30344685", // this
-        "editor.gutter.background": "#00000050",
-        "editor.line_number": "#b5bfe299",
-        "editor.active_line_number": "#8caaee",
-        "editor.active_line.background": "#51576d50",
-        // <- these lines
+        // "background": "#30344645", // base
+        // "status_bar.background": "#3034465",
+        // "title_bar.background": "#30344650",
+        // "elevated_surface.background": "#00000099",
+        // "surface.background": "#30344650",
+        // "editor.background": "#30344685", // this
+        // "editor.gutter.background": "#00000050",
+        // "editor.line_number": "#b5bfe299",
+        // "editor.active_line_number": "#8caaee",
+        // "editor.active_line.background": "#51576d50",
+        // <- indent_guide == these lines
         "editor.indent_guide": "#8caaee50",
         "editor.indent_guide_active": "#34ebeb99",
+        "editor.invisible": "#34ebeb99",
 
         //highlights
         "editor.document_highlight.read_background": "#FF007F75",
@@ -122,13 +183,12 @@
 
         // Tabs text
         "tab.active_foreground": "#FF69B4",
-        "tab.inactive_foreground": "#FF69B480",
+        "tab.inactive_foreground": "#ff",
 
         // Elements (full set)
         "element.background": "#FF69B420",
         "element.active": "#FF69B440",
         "element.disabled": "#FF69B410",
-
 
         // Text & icons
         "text": "#FFFFFF",
