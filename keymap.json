@@ -40,5 +40,18 @@
     "unbind": {
       "ctrl-\"": "editor::ExpandAllDiffHunks"
     }
-  }
+  },
+  {
+    "context": "Workspace && !Terminal",
+    "bindings": {
+      "ctrl-j": "terminal_panel::ToggleFocus",
+      "ctrl-r": "terminal_panel::ToggleFocus"
+    }
+  },
+  {
+    "context": "Terminal",
+    "bindings": {
+      "ctrl-j": "terminal_panel::ToggleFocus"
+    }
+  },
 ]
