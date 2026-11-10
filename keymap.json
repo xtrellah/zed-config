@@ -6,22 +6,27 @@
 // To see the default key bindings run `zed: open default keymap`
 // from the command palette.
 [
-  {
-    "context": "Workspace",
-    "bindings": {
-      // "shift shift": "file_finder::Toggle"
+    {
+        "context": "Workspace",
+        "bindings": {
+            // "shift shift": "file_finder::Toggle"
+        },
+    },
+    {
+        "context": "Editor && vim_mode == insert",
+        "bindings": {
+            // "j k": "vim::NormalBefore"
+        },
+    },
+    {
+        "context": "Editor",
+        "bindings": {
+            "alt-shift-f": "editor::Format",
+        },
+    },
+    {
+        "bindings": {
+            "ctrl-h": "editor::ToggleAllDiffHunks"
+        }
     }
-  },
-  {
-    "context": "Editor && vim_mode == insert",
-    "bindings": {
-      // "j k": "vim::NormalBefore"
-    }
-  },
-  {
-    "context": "Editor",
-    "bindings": {
-      "alt-shift-f": "editor::Format"
-    }
-  }
 ]
