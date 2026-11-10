@@ -7,8 +7,11 @@
 // custom settings, run `zed: open default settings` from the
 // command palette (cmd-shift-p / ctrl-shift-p)
 {
+    "auto_update_extensions": {
+        "runescape-icon-theme": false,
+    },
     "debugger": {
-        "dock": "left"
+        "dock": "left",
     },
     "cli_default_open_behavior": "new_window",
     "agent_servers": {
@@ -17,9 +20,9 @@
                 "fast": true,
                 "effort": "high",
                 "mode": "plan",
-                "model": "opus[1m]"
+                "model": "opus[1m]",
             },
-            "type": "registry"
+            "type": "registry",
         },
         "codex-acp": {
             "default_config_options": {
@@ -67,8 +70,8 @@
 
     "icon_theme": {
         "mode": "light",
-        "light": "Datapack Icons",
-        "dark": "Datapack Icons"
+        "light": "RuneScape Icon Theme",
+        "dark": "Datapack Icons",
     },
     "theme": {
         "mode": "dark",
@@ -116,17 +119,17 @@
     },
 
     "experimental.theme_overrides": {
-        "background.appearance": "blurred",
-        // "background": "#30344645", // base
-        // "status_bar.background": "#3034465",
-        // "title_bar.background": "#30344650",
-        // "elevated_surface.background": "#00000099",
-        // "surface.background": "#30344650",
-        // "editor.background": "#30344685", // this
-        // "editor.gutter.background": "#00000050",
-        // "editor.line_number": "#b5bfe299",
-        // "editor.active_line_number": "#8caaee",
-        // "editor.active_line.background": "#51576d50",
+        // "background.appearance": "blurred",
+        "background": "#30344645", // base
+        "status_bar.background": "#3034465",
+        "title_bar.background": "#30344650",
+        "elevated_surface.background": "#00000099",
+        "surface.background": "#30344650",
+        "editor.background": "#30344685", // this
+        "editor.gutter.background": "#00000050",
+        "editor.line_number": "#b5bfe299",
+        "editor.active_line_number": "#8caaee",
+        "editor.active_line.background": "#51576d50",
         // <- indent_guide == these lines
         "editor.indent_guide": "#8caaee50",
         "editor.indent_guide_active": "#34ebeb99",

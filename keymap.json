@@ -22,7 +22,8 @@
   },
   {
     "bindings": {
-      "cmd-h": "editor::ToggleAllDiffHunks"
+      "cmd-h": "editor::ToggleAllDiffHunks",
+      "cmd-'": "editor::ToggleAllDiffHunks"
     }
   }
 ]
